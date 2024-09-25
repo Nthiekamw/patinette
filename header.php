@@ -21,15 +21,17 @@
         ?>
         <span>TrottiGo</span>
     </div>
-        <nav class="navbar">
-
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
+    <nav class="navbar">
+        <ul class="nav__links" style='display: flex; justify-content: space-between; align-item: center;'>
+            <?php
+                wp_nav_menu(array(
+                    'menu_id' => 3,
+                    'theme_location' => 'header', // Replace with your menu location
+                    'menu_class'     => 'navbar', // Add your custom class for styling
+                ));
+            ?>
+        </ul>
+            </nav>
 
     </header>
 </body>

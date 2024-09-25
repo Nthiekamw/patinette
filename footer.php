@@ -5,25 +5,20 @@
 <div class="footer-container">
 <div class="footer-content">
 <p>&copy; <?php echo date('Y'); ?> Patinette. All rights reserved.</p>
-<nav>
-<a href="<?php echo home_url('/about'); ?>">About Us</a> |
-<a href="<?php echo home_url('/contact'); ?>">Contact</a> |
-<a href="<?php echo home_url('/privacy-policy'); ?>">Privacy Policy</a>
-</nav>
-</div>
-<div class="footer-social">
-<a href="https://facebook.com" target="_blank">Facebook</a> |
-<a href="https://instagram.com" target="_blank">Instagram</a>
-</div>
-</div>
-</footer>
+
  
 <?php wp_footer(); ?>
 </body>
 </html>
 
 
-
+<div class="map-grid">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44281.41452009146!2d4.795659130378145!3d45.76404373818264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea5d2f9e00fb%3A0x8c695093d3e70ab!2sLyon%2C%20France!5e0!3m2!1sen!2sfr!4v1694785273081!5m2!1sen!2sfr"
+                style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class="contact-map">
+            </iframe>
+        </div>
 <footer>
     <div class="footer-container">
         <!-- Colonne 1 : SAV -->

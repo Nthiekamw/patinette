@@ -19,3 +19,14 @@ function css_js() {
 add_action( 'wp_enqueue_scripts', 'css_js' );
 
 add_theme_support( 'custom-logo' );
+
+function trottinette_register_menus()
+{
+    register_nav_menus(array(
+        'header' => 'En tête du menu',
+        // Ajoutez d'autres emplacements de menu ici si nécessaire
+    ));
+}
+ 
+add_action('init', 'trottinette_register_menus');
+?>
