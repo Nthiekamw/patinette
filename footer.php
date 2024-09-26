@@ -60,8 +60,10 @@
                 <li><a href="conditions.html">Conditions générales</a></li>
             </ul>
         </div>
-        <p>&copy; <?php echo date('Y'); ?> Patinette. All rights reserved.</p>
+
     </div>
+    <br><br>
+    <p class="para">&copy; <?php echo date('Y'); ?> Patinette. All rights reserved.</p>
 </footer>
 </body>
  

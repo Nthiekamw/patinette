@@ -43,7 +43,7 @@ header {
 
 /* Effet hover sur les liens */
 .navbar ul li a:hover {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.582);
     border-radius: 5px;
 }
 
@@ -76,7 +76,7 @@ header {
 
 /* Style pour le texte du nom du site */
 .logo span {
-    color: #0249ae;
+    color: white;
     font-size: 24px;
     font-weight: bold;
 }
@@ -376,7 +376,7 @@ body {
  
 /* Style général du footer */
 footer {
-  background-color: #424242; /* Gris foncé */
+  background-color: ; /* Gris foncé */
   color: #ffffff; /* Blanc */
   padding: 40px 0;
 }
@@ -553,4 +553,13 @@ footer {
 }
 .text{
   margin: 20px;
+}
+.para{
+  text-align: center;
+}
+.map-grid{
+  margin: 30px auto;
+  margin-left: 40%; 
+  border-radius: 30px;
+  /* border: 1px solid white; */
 }
