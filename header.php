@@ -11,13 +11,10 @@
 <body>
      <header>
      <div class="logo">
-    
-        <img src="logo.JPG" alt="">
         <?php 
         if ( function_exists( 'the_custom_logo' ) ) {
             the_custom_logo();
         }
-        
         ?>
         <span>TrottiGo</span>
     </div>

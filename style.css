@@ -43,7 +43,7 @@ header {
 
 /* Effet hover sur les liens */
 .navbar ul li a:hover {
-    background-color: #555;
+    background-color: white;
     border-radius: 5px;
 }
 
@@ -70,13 +70,13 @@ header {
 
 /* Style pour l'image du logo */
 .logo img {
-    height: 40px; /* Taille du logo */
+    height: auto; /* Taille du logo */
     margin-right: 10px;
 }
 
 /* Style pour le texte du nom du site */
 .logo span {
-    color: white;
+    color: #0249ae;
     font-size: 24px;
     font-weight: bold;
 }
@@ -89,9 +89,8 @@ header {
 }
 
 
-
 .footer-container {
-    background-color: #333; /* Couleur de fond du footer */
+    background-color: #333; 
     color: white; /* Couleur du texte */
     padding: 20px 0;
     display: flex;
@@ -128,7 +127,7 @@ header {
 
 /* Changement de couleur au survol */
 .footer-content nav a:hover {
-    color: #ffcc00; /* Exemple de couleur au survol */
+    color: #0249ae; /* Exemple de couleur au survol */
 }
 
 /* Style pour les icônes sociales */
@@ -144,7 +143,7 @@ header {
 }
 
 .footer-social a:hover {
-    color: #ffcc00; /* Exemple de couleur au survol */
+    color: #0249ae; /* Exemple de couleur au survol */
 }
 
 /* Style responsive pour petits écrans */
@@ -212,7 +211,7 @@ header {
   }
  
   .nav__links li a:hover {
-    color: #f9e955;
+    color: #0249ae;
   }
  
   /* Suppression du background pour le bouton Contact */
@@ -307,11 +306,6 @@ body {
   transform: scale(1.05);
 }
  
-/* Couleurs spécifiques pour chaque bannière */
-.yellow { background-color: #f9e955; color: #424242; }
-.green { background-color: #6cb654; }
-.blue { background-color: #86b4fd; }
- 
 /* Nouvelle section avec fond clair */
 .info-section {
   background-color: #ffffff; /* Fond clair */
@@ -390,7 +384,6 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-around;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -402,7 +395,7 @@ footer {
 .footer-column h4 {
   font-size: 18px;
   margin-bottom: 15px;
-  color: #f9e955; /* Jaune */
+  color: white; /* Titre footer */
 }
  
 .footer-column ul {
@@ -421,7 +414,7 @@ footer {
 }
  
 .footer-column ul li a:hover {
-  color: #f9e955; /* Jaune au survol */
+  color: #0249ae; /* Jaune au survol */
 }
  
 /* Style des icônes des réseaux sociaux */
@@ -457,8 +450,6 @@ footer {
       justify-content: center;
   }
 }
- 
- 
  
  
 /* Style de la section de téléchargement */

@@ -4,7 +4,6 @@
 
 <div class="footer-container">
 <div class="footer-content">
-<p>&copy; <?php echo date('Y'); ?> Patinette. All rights reserved.</p>
 
  
 <?php wp_footer(); ?>
@@ -35,9 +34,9 @@
         <div class="footer-column">
             <h4>Suivez-nous</h4>
             <div class="social-icons">
-                <a href="https://facebook.com"><img src="<?php echo get_template_directory_uri(); ?>/images/face.jpeg"alt="Facebook"></a>
-                <a href="https://twitter.com"><img src="<?php echo get_template_directory_uri(); ?>/images/twee.jpeg" alt="Twitter"></a>
-                <a href="https://instagram.com"><img src="<?php echo get_template_directory_uri(); ?>/images/insta.jpeg" alt="Instagram"></a>
+                <a href="https://facebook.com"><img src="<?php echo get_template_directory_uri(); ?>/images/face.png"alt="Facebook"></a>
+                <a href="https://www.tiktok.com"><img src="<?php echo get_template_directory_uri(); ?>/images/tiktok.png" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="<?php echo get_template_directory_uri(); ?>/images/insta.png" alt="Instagram"></a>
                 <a href="https://linkedin.com"><img src="<?php echo get_template_directory_uri(); ?>/images/ind.jpeg" alt="LinkedIn"></a>
             </div>
         </div>
@@ -61,6 +60,7 @@
                 <li><a href="conditions.html">Conditions générales</a></li>
             </ul>
         </div>
+        <p>&copy; <?php echo date('Y'); ?> Patinette. All rights reserved.</p>
     </div>
 </footer>
 </body>
