@@ -14,78 +14,140 @@ body {
 
 /* Style pour l'en-tête */
 header {
-    background-color: #333;
-    padding: 10px 0;
+  background-color: #333;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 /* Style pour la barre de navigation */
 .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Centrer horizontalement les éléments */
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
 }
 
-/* Style pour chaque élément de la liste */
 .navbar ul li {
-    margin: 0 15px;
+margin: 0 15px;
 }
 
-/* Style pour les liens */
 .navbar ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px;
-    display: block;
-    transition: background-color 0.3s ease;
+text-decoration: none;
+color: white;
+padding: 10px 15px;
+display: block;
+transition: background-color 0.3s ease;
 }
 
-/* Effet hover sur les liens */
 .navbar ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.582);
-    border-radius: 5px;
+background-color: rgba(255, 255, 255, 0.582);
+border-radius: 5px;
 }
 
-/* Style responsive pour petits écrans */
-@media (max-width: 600px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Styles responsives pour la navigation */
+@media (max-width: 800px) {
+  /* Affichage du header en colonne pour les petits écrans */
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
 
-    .navbar ul li {
-        margin: 10px 0;
-    }
+  /* Alignement de la navigation en colonne pour mobile */
+  .nav__links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      width: 100%;
+      position: absolute;
+      top: 100px; /* Ajuster la position pour être sous le logo */
+      left: 0;
+      text-align: left;
+      padding: 10px 0;
+  }
+
+  .nav__links.active {
+      display: flex;
+  }
+
+  .navbar ul li {
+      width: 100%;
+      margin: 0;
+  }
+
+  .navbar ul li a {
+      padding: 15px 20px;
+      text-align: left;
+  }
+
+  /* Bouton toggle pour mobile */
+  #menu-toggle {
+      display: block;
+      background: none;
+      color: white;
+      font-size: 24px;
+      border: none;
+      cursor: pointer;
+      margin-left: auto; /* Place le bouton à droite */
+      padding-right: 20px;
+  }
+
+  /* Logo responsive */
+  .logo {
+      width: 100%;
+      justify-content: space-between;
+      padding: 10px 20px;
+  }
+
+  .logo img {
+      height: 40px; /* Ajuster la taille du logo sur mobile */
+  }
+
+  .logo span {
+      font-size: 20px;
+  }
 }
 
+/* Cacher le bouton menu toggle sur desktop */
+@media (min-width: 800px) {
+  #menu-toggle {
+      display: none;
+  }
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* Style pour le logo */
 .logo {
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
 /* Style pour l'image du logo */
 .logo img {
-    height: auto; /* Taille du logo */
-    margin-right: 10px;
+  height: auto; /* Taille du logo */
+  margin-right: 10px;
 }
 
 /* Style pour le texte du nom du site */
 .logo span {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .custom-logo {
-    width: 100px;
-    height: 84px;
-    bottom: 150px;
-   border-radius: 10px; 
+  width: 100px;
+  height: 84px;
+  bottom: 150px;
+  border-radius: 10px;
 }
 
 
@@ -236,7 +298,7 @@ header {
   }
  
   /* Responsive styles */
-  @media only screen and (max-width: 800px) {
+  @media(max-width: 800px) {
     .nav__links,
     .cta {
       display: none;
@@ -353,7 +415,7 @@ body {
 }
  
 /* Responsive Design pour mobile */
-@media only screen and (max-width: 768px) {
+@media(max-width: 768px) {
   .offer-banners {
       flex-direction: column;
       align-items: center;
@@ -376,190 +438,117 @@ body {
  
 /* Style général du footer */
 footer {
-  background-color: ; /* Gris foncé */
+  background-color: #333; /* Gris foncé */
   color: #ffffff; /* Blanc */
   padding: 40px 0;
 }
- 
+
 .footer-container {
   display: flex;
+  flex-wrap: wrap; /* Permet l'empilement si l'espace est réduit */
   justify-content: space-around;
   margin: 0 auto;
   padding: 0 20px;
 }
- 
+
 .footer-column {
   width: 20%;
+  margin-bottom: 20px;
 }
- 
+
 .footer-column h4 {
   font-size: 18px;
   margin-bottom: 15px;
   color: white; /* Titre footer */
 }
- 
+
 .footer-column ul {
   list-style-type: none;
   padding: 0;
 }
- 
+
 .footer-column ul li {
   margin-bottom: 10px;
 }
- 
+
 .footer-column ul li a {
   color: #ffffff; /* Blanc */
   text-decoration: none;
   transition: color 0.3s;
 }
- 
+
 .footer-column ul li a:hover {
-  color: #0249ae; /* Jaune au survol */
+  color: #0249ae; /* Bleu au survol */
 }
- 
+
 /* Style des icônes des réseaux sociaux */
 .social-icons {
   display: flex;
   gap: 15px;
 }
- 
+
 .social-icons a img {
   width: 32px;
   height: 32px;
   transition: transform 0.3s;
 }
- 
+
 .social-icons a img:hover {
   transform: scale(1.1);
 }
- 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .footer-container {
-      flex-direction: column;
-      align-items: center;
-  }
- 
-  .footer-column {
-      width: 100%;
-      margin-bottom: 20px;
-      text-align: center;
-  }
- 
-  .social-icons {
-      justify-content: center;
-  }
-}
- 
- 
-/* Style de la section de téléchargement */
-.download-section {
-  background-color: #f9f9f9; /* Fond clair */
-  padding: 60px 20px;
-  text-align: center;
-}
- 
-.download-section h2 {
-  font-size: 28px;
-  color: #424242; /* Gris foncé */
-  margin-bottom: 10px;
-}
- 
-.download-section p {
-  font-size: 18px;
-  color: #6cb654; /* Vert */
-  margin-bottom: 30px;
-}
- 
-.download-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
- 
-.download-buttons {
+
+/* Style de la carte Google Maps */
+.map-grid {
+  margin: 30px auto;
   display: flex;
   justify-content: center;
-  gap: 20px;
-}
- 
-/* Style des boutons de téléchargement */
-.download-btn {
-  display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 15px 25px;
-  border-radius: 50px;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  transition: background-color 0.3s ease;
+  width: 80%;
+  max-width: 1000px;
 }
- 
-/* Bouton Android */
-.download-btn.android {
-  background-color: #6cb654; /* Vert */
+
+.contact-map {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
 }
- 
-.download-btn.android:hover {
-  background-color: #5ca147;
-}
- 
-/* Bouton iOS */
-.download-btn.ios {
-  background-color: #86b4fd; /* Bleu */
-}
- 
-.download-btn.ios:hover {
-  background-color: #74a3e5;
-}
- 
-/* Style des icônes */
-.download-btn img {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-}
- 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .download-buttons {
-      flex-direction: column;
-      gap: 15px;
-  }
-}
- 
-.offre{
-  padding: em;
-  height: 200px;
-  border-radius:0px;
-}
-.para1{
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  font-size: 20px;
-  font-family: sans-serif;
-}
-.bloc{
-  margin-top: 4%;
-  margin: 50px;
-  /* border: 1px solid black; */
-  /* height: 200px; */
-}
-.bloc1{
-  margin: 50px;
-}
-.text{
-  margin: 20px;
-}
+
 .para{
   text-align: center;
 }
-.map-grid{
-  margin: 30px auto;
-  margin-left: 40%; 
-  border-radius: 30px;
-  /* border: 1px solid white; */
+
+/* Responsive Design pour footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Empile les colonnes verticalement */
+    align-items: center;
+    padding: 20px;
+  }
+
+  .footer-column {
+    width: 100%; /* Chaque colonne occupe 100% de la largeur */
+    text-align: center; /* Centrer le texte sur mobile */
+    margin-bottom: 20px;
+  }
+
+  .footer-column h4 {
+    margin-bottom: 10px;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+
+  .social-icons {
+    justify-content: center; /* Centre les icônes des réseaux sociaux */
+  }
+
+  .map-grid {
+    width: 100%; /* La carte occupe toute la largeur sur mobile */
+    padding: 0 20px;
+  }
+
+  .contact-map {
+    height: 200px; /* Réduction de la hauteur de la carte sur mobile */
+  }
 }
