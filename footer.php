@@ -57,7 +57,7 @@
     </div>
 
     <br><br>
-    <p class="para">&copy; <?php echo date('Y'); ?> Patinette. All rights reserved.</p>
+    <p class="para">&copy; <?php echo date('Y'); ?> TrottiGo. All rights reserved.</p>
 </footer>
 </body>
  
